@@ -69,10 +69,10 @@ function isMultiple( $number, $step ) {
 	while ( $number > 0 ) {
 		$number = $number - $step;
 		if ( $number == 0 ) {
-			return true;
+			return false;
 		}
 	}
-	return false;
+	return true;
 }
 
 function skip_multiple_value( $number = 0, $count = 0, $step = 0 ) {
